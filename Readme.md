@@ -1,51 +1,7 @@
-# NLP Feature Extractor for Books
+This team project is intended to solve a classification task on a subset of Gutenberg Corpus of fiction books with a focus on extracting handcrafted features and evaluating models based on genre classification.
 
-## Extracts features from books and compares them to the features of other books to get a set of similar books
-
-### Set of features include :
-* sentiment analysis from the beginning of a book
-* sentiment analysis from the ending of a book 
-* sentences count
-* average sentence length
-* flesch reading score
-* word count
-* Proper noun count
-
-### Packages required :
-* textblob
-* textstat
-* bs4
-* re 
-* csv
-* os
-* pandas
-* sklearn
-
-## USAGE
-
-### 1. Feature Extractor
-##### Entry point : `feature_extractor.py`
-##### Inputs : a folder called "books" containing all the required books in html format
-##### Output : a csv file containing features from all books called 'features.csv'
-
-*To generate a new features file, rename the old file or move it to another directory before running the script*
-
-### 2. Similar books picker 
-
-##### ---- TO BE IMPLEMENTED ---- 
-
-
-## Features dataset discription
-
-* BOOK_ID   - Book id
-* Senti_S1  - Sentiment of the 1st 1/3 of the book's beginning
-* Senti_S2  - Sentiment of the 2nd 1/3 of the book's beginning
-* Senti_S3  - Sentiment of the 3rd 1/3 of the book's beginning
-* Senti_E1  - Sentiment of the 1st 1/3 of the book's ending
-* Senti_E2  - Sentiment of the 2nd 1/3 of the book's ending
-* Senti_E3  - Sentiment of the 3rd 1/3 of the book's ending
-* S_count   - Sentences count
-* Avg_S_len - Average Sentence length
-* Flesch    - Flesch reading score
-* W_count   - Word count
-* Noun_Cnt  - Proper noun count
+We have worked here with a subset of Gutenberg Corpus consisting of around 996 books. These books are labelled
+with the genre they belong to and we had to mainly focus on classification of the books and predict their genre. The
+major focus on doing so was to extract handcrafted features rather than aligning to generic concepts of text classification
+and retrieval like Bag of Words (BOW) model or word2vec embedding.
+The major motivation here was to use classification techniques that uses an approach of learning features which are not traditionally used rather which are more intuitive or contextual to books or fiction books in general.
