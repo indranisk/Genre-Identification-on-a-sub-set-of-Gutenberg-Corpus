@@ -4,8 +4,8 @@
 This  project is intended to solve a classification task on a subset of Gutenberg Corpus of fiction books with a focus on extracting handcrafted features and evaluating models based on genre classification.
 
 ## Dataset:
-subset of Gutenberg Corpus consisting of around 996 books. These books are labelled
-with the genre they belong to and we had to mainly focus on classification of the books and predict their genre. 
+The dataset is a subset of Gutenberg Corpus consisting of around 996 books. These books are labelled
+with the genre they belong to and we had mainly focussed on classification of the books and predict their genre. 
 
 ## Project Goal:
 The major focus was to extract handcrafted features rather than aligning to generic concepts of text classification
